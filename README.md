@@ -57,8 +57,9 @@ This approach:
 - Can be upgraded to direct payments when regulatory requirements are met
 
 <p align="center">
-  <img src="doc/flow-extension.png" alt="Extension" width="300" style="margin-right: 20px;">
-  <img src="doc/flow-mobile.jpg" alt="Mobile" width="300">
+  <img src="doc/flow-extension.png" alt="Extension" height="400" style="border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+  <span style="font-size: 48px; margin: 0 20px; color: #666;">→</span>
+  <img src="doc/flow-mobile.jpg" alt="Mobile" height="400" style="border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
 </p>
 
 ## Architecture
