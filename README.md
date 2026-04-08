@@ -57,11 +57,8 @@ This approach:
 - Can be upgraded to direct payments when regulatory requirements are met
 
 <p align="center">
-  <img src="doc/flow-extension.png" alt="Extension scanning QR code" width="400">
-</p>
-
-<p align="center">
-  <img src="doc/flow-mobile.jpg" alt="Mobile payment completion" width="400">
+  <img src="doc/flow-extension.png" alt="Extension" width="300" style="margin-right: 20px;">
+  <img src="doc/flow-mobile.jpg" alt="Mobile" width="300">
 </p>
 
 ## Architecture
