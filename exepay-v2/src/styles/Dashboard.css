@@ -1,0 +1,622 @@
+/* ExePay v2 - Dashboard Styles (Compact & Minimal)
+   Pure black, white text, clean aesthetic */
+
+/* ========== Base ========== */
+.dashboard {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.home-view {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.home-view::-webkit-scrollbar { width: 0; display: none; }
+
+/* ========== Header ========== */
+.dash-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.3px;
+}
+
+.avatar-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.avatar-btn .avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  inset: 0;
+}
+
+.avatar-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* ========== Greeting ========== */
+.greeting-section {
+  margin-bottom: 24px;
+}
+
+.greeting-text {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.4);
+  display: block;
+  margin-bottom: 2px;
+}
+
+.user-name {
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+  letter-spacing: -0.5px;
+}
+
+/* ========== Spending Overview ========== */
+.spending-overview {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 16px;
+  padding: 18px;
+  margin-bottom: 20px;
+}
+
+.spending-main {
+  margin-bottom: 14px;
+}
+
+.spending-label {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.4);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.spending-value {
+  display: flex;
+  align-items: baseline;
+  gap: 2px;
+}
+
+.spending-value .currency {
+  font-size: 20px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.spending-value .amount {
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -1px;
+  font-feature-settings: 'tnum' on;
+}
+
+.spending-mini {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.mini-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.mini-value {
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.mini-label {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.mini-divider {
+  width: 1px;
+  height: 28px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* ========== Compact Scan Button ========== */
+.scan-btn-compact {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 14px 18px;
+  background: #fff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-bottom: 20px;
+  font-family: inherit;
+}
+
+.scan-btn-compact svg {
+  color: #000;
+  flex-shrink: 0;
+}
+
+.scan-btn-compact span {
+  font-size: 15px;
+  font-weight: 600;
+  color: #000;
+}
+
+.scan-btn-compact .arrow-icon {
+  margin-left: auto;
+  opacity: 0.5;
+}
+
+.scan-btn-compact:hover {
+  background: rgba(255, 255, 255, 0.92);
+}
+
+.scan-btn-compact:active {
+  transform: scale(0.98);
+}
+
+/* ========== Recent Payees ========== */
+.recent-payees-section {
+  margin-top: 20px;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.section-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.35);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Payees Grid - 3 per row */
+.payees-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.payee-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 12px 6px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.payee-card:hover {
+  background: rgba(255, 255, 255, 0.06);
+  transform: scale(1.02);
+}
+
+.payee-card:active {
+  transform: scale(0.96);
+}
+
+.payee-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.payee-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.payee-label {
+  font-size: 11px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.65);
+  text-align: center;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* ========== Scan Page ========== */
+.scan-page {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: #000;
+}
+
+.scan-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.scan-header h1 {
+  font-size: 17px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+}
+
+.scan-header .header-spacer {
+  width: 40px;
+}
+
+.scan-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+/* ========== Footer ========== */
+.footer-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 16px;
+  margin-top: auto;
+}
+
+.footer-info svg {
+  color: rgba(255, 255, 255, 0.25);
+}
+
+.footer-info span {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* ========== Payment Popup ========== */
+.popup-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+  z-index: 100;
+}
+
+.payment-popup {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(180deg, #111 0%, #0a0a0a 100%);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 20px 20px 0 0;
+  z-index: 101;
+  max-height: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.popup-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 16px 4px;
+  position: relative;
+}
+
+.popup-handle {
+  width: 32px;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 2px;
+}
+
+.popup-close {
+  position: absolute;
+  right: 12px;
+  top: 8px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.popup-close svg {
+  color: rgba(255, 255, 255, 0.4);
+  width: 16px;
+  height: 16px;
+}
+
+.popup-close:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.popup-close:hover svg {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.popup-content {
+  flex: 1;
+  padding: 12px 20px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+}
+
+/* Payee Info - Compact */
+.payee-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.payee-avatar-lg {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.payee-avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.payee-name {
+  font-size: 17px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0 0 2px;
+  text-align: center;
+}
+
+.payee-upi {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.35);
+  margin: 0;
+  font-family: 'SF Mono', Monaco, monospace;
+}
+
+/* Amount Display - Compact */
+.amount-display {
+  display: flex;
+  align-items: baseline;
+  gap: 2px;
+  margin-bottom: 20px;
+}
+
+.amount-currency {
+  font-size: 20px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.amount-value {
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -1px;
+  font-feature-settings: 'tnum' on;
+}
+
+/* Popup Actions - Professional */
+.popup-actions {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.send-btn-lg {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px;
+  background: #fff;
+  color: #000;
+  border: none;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+
+.send-btn-lg img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.send-btn-lg svg { color: #000; }
+
+.send-btn-lg:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.9);
+  transform: scale(0.99);
+}
+
+.send-btn-lg:active:not(:disabled) {
+  transform: scale(0.97);
+}
+
+.send-btn-lg:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.popup-hint {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.3);
+  text-align: center;
+  margin: 0;
+}
+
+/* Status Messages */
+.status-success, .status-error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px;
+  border-radius: 14px;
+  font-size: 15px;
+  font-weight: 500;
+  width: 100%;
+}
+
+.status-success {
+  background: rgba(34, 197, 94, 0.1);
+  border: 1px solid rgba(34, 197, 94, 0.2);
+  color: #22c55e;
+}
+
+.status-error {
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  color: #ef4444;
+}
+
+.btn-loader {
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-top-color: #000;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* ========== Sub-page Header ========== */
+.page-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.back-btn {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.back-btn svg {
+  width: 20px;
+  height: 20px;
+  color: #fff;
+}
+
+.back-btn:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.page-header h1, .page-title {
+  font-size: 17px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+}
+
+/* ========== Page Content ========== */
+.page-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.page-content::-webkit-scrollbar { width: 0; display: none; }

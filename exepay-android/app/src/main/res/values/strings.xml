@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ExePay</string>
+    
+    <!-- Splash Screen -->
+    <string name="splash_tagline_1">Scan. Send. Done.</string>
+    <string name="splash_tagline_2">Pay Anywhere. Instantly.</string>
+    
+    <!-- Auth -->
+    <string name="login_title">Welcome Back</string>
+    <string name="login_subtitle">Sign in to continue</string>
+    <string name="email_hint">Email address</string>
+    <string name="password_hint">Password</string>
+    <string name="login_button">Sign In</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="no_account">Don\'t have an account?</string>
+    <string name="create_account">Create one in the extension</string>
+    
+    <!-- Dashboard -->
+    <string name="greeting_morning">Good morning</string>
+    <string name="greeting_afternoon">Good afternoon</string>
+    <string name="greeting_evening">Good evening</string>
+    <string name="greeting_night">Good night</string>
+    <string name="payment_requests">Payment Requests</string>
+    <string name="no_payments">No payment requests yet</string>
+    <string name="no_payments_subtitle">Scan a QR code from the extension to get started</string>
+    <string name="today">Today</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="earlier">Earlier</string>
+    
+    <!-- Payment Status -->
+    <string name="status_pending">Pending</string>
+    <string name="status_sent">Sent</string>
+    <string name="status_opened">Opened</string>
+    <string name="status_completed">Completed</string>
+    <string name="status_failed">Failed</string>
+    
+    <!-- Actions -->
+    <string name="pay_now">Pay Now</string>
+    <string name="mark_done">Mark as Done</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="retry">Retry</string>
+    <string name="logout">Logout</string>
+    <string name="profile">Profile</string>
+    
+    <!-- Notifications -->
+    <string name="notification_channel_name">Payment Requests</string>
+    <string name="notification_channel_desc">Notifications for incoming payment requests</string>
+    
+    <!-- Errors -->
+    <string name="error_login">Login failed. Please check your credentials.</string>
+    <string name="error_network">Network error. Please check your connection.</string>
+    <string name="error_no_upi">No UPI app installed. Please install Google Pay, PhonePe, or Paytm.</string>
+    <string name="error_generic">Something went wrong. Please try again.</string>
+</resources>

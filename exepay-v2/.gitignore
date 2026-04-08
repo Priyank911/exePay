@@ -1,0 +1,54 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependencies
+node_modules
+
+# Build output (uncomment to include in repo)
+# dist
+dist-ssr
+
+# Local env files
+*.local
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Session and cache
+.copilot/
+*.tsbuildinfo
+
+# Firebase (if local emulator data)
+.firebase/
+firebase-debug.log
+firestore-debug.log
+ui-debug.log
+
+# Copilot agent files
+.agents/
+skills-lock.json
+
+# Planning docs (not needed in repo)
+PIVOT_PLAN.md

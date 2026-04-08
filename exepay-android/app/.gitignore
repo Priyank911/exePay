@@ -1,0 +1,6 @@
+# Add google-services.json here
+# Download from Firebase Console → Project Settings → Your apps → Android app
+# This file is required for the app to connect to Firebase
+
+# DO NOT commit google-services.json to version control
+# Each developer should download their own copy

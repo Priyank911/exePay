@@ -1,0 +1,229 @@
+/* ExePay v2 - Receive QR Styles */
+/* Pure black with dark red accent (#dc2626) */
+
+.receive-page {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #000;
+}
+
+.receive-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 22px;
+  overflow-y: auto;
+}
+
+.receive-content::-webkit-scrollbar {
+  width: 4px;
+}
+
+.receive-content::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+}
+
+/* QR Container */
+.qr-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.qr-frame {
+  width: 190px;
+  height: 190px;
+  background: #fff;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 14px;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1),
+              0 0 35px rgba(220, 38, 38, 0.12);
+}
+
+.qr-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.qr-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.qr-loading .spinner {
+  width: 26px;
+  height: 26px;
+  border: 2px solid rgba(220, 38, 38, 0.2);
+  border-top-color: #dc2626;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+.qr-placeholder {
+  width: 100%;
+  height: 100%;
+  background: #f5f5f5;
+  border-radius: 12px;
+}
+
+.qr-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.label-name {
+  font-size: 17px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.label-address {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.4);
+  font-family: 'SF Mono', Monaco, Consolas, monospace;
+}
+
+/* Input Section */
+.input-section {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.input-section .input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.input-section label {
+  font-size: 12px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.4);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.input-section input {
+  padding: 14px 16px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  color: #fff;
+  font-size: 16px;
+  transition: all 0.2s;
+}
+
+.input-section input:focus {
+  border-color: #dc2626;
+  background: rgba(220, 38, 38, 0.03);
+  outline: none;
+}
+
+.input-section input::placeholder {
+  color: rgba(255, 255, 255, 0.25);
+}
+
+/* Amount Input */
+.amount-input {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+
+.amount-input:focus-within {
+  border-color: #dc2626;
+  background: rgba(220, 38, 38, 0.03);
+}
+
+.amount-input .currency {
+  padding: 14px 16px;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 16px;
+  border-right: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.amount-input input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  padding: 14px 16px;
+  padding-left: 0;
+  font-size: 16px;
+}
+
+.amount-input input:focus {
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+/* Actions */
+.receive-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: auto;
+}
+
+.action-btn-secondary,
+.action-btn-primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px;
+  border-radius: 14px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.action-btn-secondary {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.action-btn-secondary:hover {
+  border-color: rgba(220, 38, 38, 0.3);
+  background: rgba(220, 38, 38, 0.05);
+  color: #dc2626;
+}
+
+.action-btn-primary {
+  background: #dc2626;
+  border: none;
+  color: #fff;
+}
+
+.action-btn-primary:hover {
+  background: #ef4444;
+}
+
+.action-btn-secondary svg,
+.action-btn-primary svg {
+  width: 20px;
+  height: 20px;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
